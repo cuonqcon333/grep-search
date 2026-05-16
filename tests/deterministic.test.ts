@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { generateStableHash } from '../../src/utils/hash.js';
+import { generateStableHash } from '../src/utils/hash.js';
 
 describe('Deterministic Output', () => {
   it('should generate stable hashes', () => {

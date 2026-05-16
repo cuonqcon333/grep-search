@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { LineIndexer } from '../../src/parser/line-indexer.js';
+import { LineIndexer } from '../src/parser/line-indexer.js';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { fileURLToPath } from 'url';
