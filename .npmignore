@@ -5,6 +5,8 @@ benchmarks/
 
 # Configuration
 tsconfig.json
+tsconfig.esm.json
+tsconfig.cjs.json
 vitest.config.ts
 
 # Development files
