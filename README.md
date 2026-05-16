@@ -37,6 +37,8 @@ npm install @caplab/grep-search
 
 ## Quick Start
 
+### ESM (ECMAScript Modules)
+
 ```javascript
 import { grepSearch } from '@caplab/grep-search';
 
@@ -50,6 +52,23 @@ for await (const match of grepSearch({
 }
 ```
 
+### CommonJS
+
+```javascript
+const { grepSearch } = require('@caplab/grep-search');
+
+// Search for "const" in TypeScript files
+(async () => {
+  for await (const match of grepSearch({
+    cwd: './my-project',
+    query: 'const',
+    extensions: ['ts', 'js'],
+  })) {
+    console.log(`${match.file}:${match.line}:${match.column} - ${match.text}`);
+  }
+})();
+```
+
 **Output:**
 ```
 src/utils.ts:10:0 - const
@@ -60,7 +79,7 @@ src/config.ts:87:4 - const
 ## Requirements
 
 - Node.js >= 20.0.0
-- ESM-only (no CommonJS support)
+- Supports both ESM and CommonJS
 
 ## Common Use Cases
 
