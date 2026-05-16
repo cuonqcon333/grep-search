@@ -1,0 +1,24 @@
+# Source files
+src/
+tests/
+benchmarks/
+
+# Configuration
+tsconfig.json
+vitest.config.ts
+
+# Development files
+.git/
+.gitignore
+.npmignore
+
+# Documentation (keep README)
+docs/
+CHANGELOG.md
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
