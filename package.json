@@ -1,6 +1,6 @@
 {
   "name": "@caplab/grep-search",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deterministic streaming text search engine with accurate line/column mapping",
   "type": "module",
   "main": "./dist/cjs/index.js",
